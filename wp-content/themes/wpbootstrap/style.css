@@ -15,16 +15,16 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 
 /* DON'T FORGET TO VERSIONING IN THE HEADER !!! */
 
-@import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-theme.css'); 
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-theme.css');
 
 
 @font-face {
   font-family: 'MonotypeCorsiva';
   src: url("/wp-content/themes/wpbootstrap/bootstrap/fonts/mtcorsva.eot");
-  src: local("☺"), 
-  url("/wp-content/themes/wpbootstrap/bootstrap/fonts/mtcorsva.woff") format("woff"), 
-  url("/wp-content/themes/wpbootstrap/bootstrap/fonts/mtcorsva.ttf") format("truetype"), 
+  src: local("☺"),
+  url("/wp-content/themes/wpbootstrap/bootstrap/fonts/mtcorsva.woff") format("woff"),
+  url("/wp-content/themes/wpbootstrap/bootstrap/fonts/mtcorsva.ttf") format("truetype"),
   url("/wp-content/themes/wpbootstrap/bootstrap/fonts/mtcorsva.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
@@ -1143,11 +1143,11 @@ video {
   transition: 1s opacity;
   margin:0 -15px;
 }
-.stopfade { 
+.stopfade {
    opacity: .5;
 }
 
-#polina { 
+#polina {
   position: absolute;
   margin:0;
   padding: 0;
@@ -1680,7 +1680,7 @@ header {
 			margin-top: 10px; }
 
 		header.f-nav .tagline p {
-		  margin: 0; 
+		  margin: 0;
 		  color: #000; }
 
   header ul {
@@ -1703,7 +1703,7 @@ header {
 
 .tagline {
 	margin-top: 30px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 	color: #fff; }
 
   .header-internal {
@@ -1775,8 +1775,8 @@ header {
   background: #fff url("/wp-content/themes/wpbootstrap/bootstrap/css/images/home-topo.jpg") center 70px scroll repeat-x;
   float: left;
   width: 100% !important;
-  overflow: hidden; 
-	margin-top: 120px; 
+  overflow: hidden;
+	margin-top: 120px;
 }
   #features p {
     font-size: 16px;
@@ -1860,16 +1860,16 @@ header {
 
   #features nav {
     background-position: center 83px;
-    height: 150px; 
+    height: 150px;
   }
 
   #features nav div {
-  	bottom: -50px; 
+  	bottom: -50px;
   }
 
   #features nav li:hover div,
   #features nav li a.active div {
-    bottom: -58px; 
+    bottom: -58px;
   }
 
 	.service img {
@@ -1934,7 +1934,7 @@ header {
 	}
 
   .painel img {
-  	width: 110%; 
+  	width: 110%;
   }
 
   .casos-estudo {
@@ -1952,14 +1952,14 @@ header {
 
   #features nav li a[data-name="hosting"] div,
   #features nav li a[data-name="strategy"] div {
-    bottom: -7px; 
+    bottom: -7px;
   }
 
 	#features nav li:hover a[data-name="hosting"] div,
   #features nav li a.active[data-name="hosting"] div,
   #features nav li:hover a[data-name="strategy"] div,
   #features nav li a.active[data-name="strategy"] div {
-    bottom: -13px; 
+    bottom: -13px;
   }
 
   #features nav li div {
@@ -1968,7 +1968,7 @@ header {
 
   #features nav li:hover div,
   #features nav li a.active div {
-    bottom: -31px; 
+    bottom: -31px;
   }
 }
 
@@ -2035,4 +2035,21 @@ header {
 
 .info .team-member img {
     border: none;
+}
+/*******************************************************************************
+* Home Logos Clientes
+*******************************************************************************/
+.logo-pb-cliente{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  transition: filter 0.3s;
+  -webkit-transition: filter 0.3s;
+  height: 90px;
+}
+
+.logo-pb-cliente:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
 }

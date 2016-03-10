@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 function wpEnqueueScripts(){
     wp_register_script('jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', false, true, array('jquery'));
@@ -11,7 +11,7 @@ function wpEnqueueScripts(){
     wp_enqueue_script('home');
     wp_register_script('lib', get_template_directory_uri() . '/js/lib.js?v=1', false, true, array('jquery'));
     wp_enqueue_script('lib');
-}    
+}
 
 add_action('wp_enqueue_scripts', 'wpEnqueueScripts');
 
@@ -188,35 +188,55 @@ include (TEMPLATEPATH . '/translations.inc.php');
     </div>
 
     <div class="row logos">
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
-        <a href="http://redciudades.net/" target="_blank">   
-          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-rciudades.jpg';?>" id="l1" onmousemove="l1On()" onmouseout="l1Off()" width="90" border="0">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+        <a href="http://redciudades.net/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-rciudades-ov.jpg';?>" id="l1"  width="90" border="0">
         </a>
       </div>
 
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
         <a href="http://www.nossasaopaulo.org.br/" target="_blank">
-          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-nsp.jpg';?>" id="l2" onmousemove="l2On()" onmouseout="l2Off()" width="128" border="0">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-nsp-ov.jpg';?>" id="l2" width="128" border="0">
         </a>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
         <a href="http://www.cidadessustentaveis.org.br/" target="_blank">
-          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-csustent.jpg';?>" id="l3" onmousemove="l3On()" onmouseout="l3Off()" width="232" border="0">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-csustent-ov.jpg';?>" id="l3" width="232" border="0">
         </a>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
         <a href="http://www.fundacioncorona.org.co/" target="_blank">
-          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-fcor.jpg';?>" id="l4" onmousemove="l4On()" onmouseout="l4Off()" width="222" border="0">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-fcor-ov.jpg';?>" id="l4" width="222" border="0">
         </a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
         <a href="http://www.prefeitura.sp.gov.br/cidade/secretarias/planejamento/prodam/" target="_blank">
-          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-prod.jpg';?>" id="l5" onmousemove="l5On()" onmouseout="l5Off()" width="178" border="0">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-prod-ov.jpg';?>" id="l5" width="178" border="0">
         </a>
       </div>
-    </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+        <a href="http://redcomovamos.org/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-como-vamos-ov.jpg';?>" width="220" border="0">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+        <a href="http://accesa.org/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-accesa1.jpg';?>" width="79" border="0">
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+        <a href="http://www.datauy.org/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-data-ui.jpg';?>" width="192" border="0">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+        <a href="http://www.capital.sp.gov.br/portal/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-prefSP.jpg';?>" width="220" border="0">
+        </a>
+      </div>
+    </div><!-- Fim da div .row.logos -->
 
-  
+
 
   </div>
 </section>
@@ -230,11 +250,11 @@ include (TEMPLATEPATH . '/translations.inc.php');
 
     <h1 class="text-center"><?php echo tl("Soluções cívicas certificadas pelo AppCivico");?></h1>
 
-    <?php 
+    <?php
       $q = new WP_Query( array( 'category_name' => 'Aplicativos',
                                 'meta_key' => 'pre-lancamento',
                                 'orderby' => array( 'meta_value_num' => 'ASC',
-                                                    'title' => 'ASC' ) 
+                                                    'title' => 'ASC' )
                               )
                         );
     ?>
@@ -275,7 +295,7 @@ include (TEMPLATEPATH . '/translations.inc.php');
                   <?php } ?>
                 </div>
                 <div class="axes">
-                <?php 
+                <?php
 
                 $posts = get_field('eixo');
 
@@ -337,7 +357,7 @@ include (TEMPLATEPATH . '/translations.inc.php');
             <div class="icon <?php echo get_field('codigo'); ?>">
             </div>
             <div class="over">
-              <p><?php 
+              <p><?php
       echo tl("Em breve");
      ?></p>
             </div>

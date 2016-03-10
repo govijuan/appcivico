@@ -5,7 +5,7 @@ new WOW().init();
 })(jQuery);
 
 
-function l1On() {
+/*function l1On() {
   document.getElementById("l1").src = "/wp-content/themes/wpbootstrap/bootstrap/css/images/logo-rciudades-ov.jpg";
 }
 
@@ -43,4 +43,4 @@ function l5On() {
 
 function l5Off() {
   document.getElementById("l5").src = "/wp-content/themes/wpbootstrap/bootstrap/css/images/logo-prod.jpg";
-}
+}*/

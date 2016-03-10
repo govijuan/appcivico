@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="<?php bloginfo('stylesheet_url');?>?v=1" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_url');?>?v=1.2" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
@@ -31,7 +31,7 @@
         <div class='col-xs-3 col-sm-2 col-md-2 col-lg-2' id='brand'>
           <a href="<?php echo site_url()."/".((pll_current_language() != "pt") ? pll_current_language() : ""); ?>" class="link-logo"><img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo_appcivico.png';?>" /></a>
         </div>
-     
+
 
    <div class='col-lg-10 col-md-10 col-sm-8 col-xs-9 tagline'>
           <p>
