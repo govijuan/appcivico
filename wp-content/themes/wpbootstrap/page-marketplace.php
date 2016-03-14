@@ -28,24 +28,7 @@ include (TEMPLATEPATH . '/translations.inc.php');
 
   <hr>
   <div class="container">
-    <form method="get">
-        <div class="float-left">
-<!--//          <div class="field">
-            <select name="order" onChange="document.forms[0].submit();">
-              <option value="">Ordenar Por</option>
-              <option value="name" <?php if ($_GET["order"] == "name") echo "selected" ?>>Nome</option>
-              <option value="axis" <?php if ($_GET["order"] == "axis") echo "selected" ?>>Eixo</option>
-            </select>
-          </div>//-->
-          <div class="field">
-            <input type="text" name="search" value="<?php echo $_GET["search"] ?>" placeholder="<?php echo tl("Buscar");?>" size="30">
-            <button class="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-          </div>
-        </div>
-        <div class="float-right">
-
-        </div>
-    </form>
+    <?php get_search_form(); ?>
   </div>
 </section>
 
@@ -53,6 +36,7 @@ include (TEMPLATEPATH . '/translations.inc.php');
   <div class="container">
 
 <?php
+
       $q = new WP_Query( array( 'category_name' => 'Aplicativos',
                                 'meta_key' => 'pre-lancamento',
                                 'orderby' => array( 'meta_value_num' => 'ASC',
