@@ -8,7 +8,7 @@
 
 get_header("internal"); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area single">
 		<main id="main" class="site-main" role="main">
 
 		<?php

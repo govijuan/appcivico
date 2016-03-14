@@ -31,14 +31,14 @@
         <div class='col-xs-3 col-sm-2 col-md-2 col-lg-2' id='brand'>
           <a href="<?php echo site_url()."/".((pll_current_language() != "pt") ? pll_current_language() : ""); ?>" class="link-logo"><img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo_appcivico.png';?>" /></a>
         </div>
- 
-            
+
+
   <div class='col-lg-10 col-md-10 col-sm-8 col-xs-9 tagline'>
           <p>
             <!-- Better apps
             <span>for a</span>
             better world -->
-            
+
 	    <?php if( trim(strtolower(pll_current_language())) == "pt" ) { ?>
 	            <strong>Tecnologias para aumentar o engajamento social e valorizar o que é público </strong>
 	    <?php } else { ?>
@@ -47,7 +47,7 @@
           </p>
         </div>
 
-         
+
         <nav class='col-xs-10 hidden-sm-10 col-md-10 col-lg-10'>
           <?php wp_nav_menu( array('menu' => 'Main_'.pll_current_language() )); ?>
         </nav>

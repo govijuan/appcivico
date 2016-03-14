@@ -219,12 +219,12 @@ include (TEMPLATEPATH . '/translations.inc.php');
           <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-como-vamos-ov.jpg';?>" width="220" border="0">
         </a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
         <a href="http://accesa.org/" target="_blank">
           <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-accesa1.jpg';?>" width="79" border="0">
         </a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 text-center logo-pb-cliente">
         <a href="http://www.datauy.org/" target="_blank">
           <img src="<?php echo get_template_directory_uri() . '/bootstrap/css/images/logo-data-ui.jpg';?>" width="192" border="0">
         </a>
