@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="<?php bloginfo('stylesheet_url');?>?c=5" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_url');?>?c=6" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />

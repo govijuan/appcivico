@@ -29,6 +29,34 @@ include (TEMPLATEPATH . '/translations.inc.php');
   <hr>
   <div class="container">
     <?php get_search_form(); ?>
+    <?php global $query_string;
+
+    $query_args = explode("&", $query_string);
+    $search_query = array();
+
+    if( strlen($query_string) > 0 ) {
+    foreach($query_args as $key => $string) {
+      $query_split = explode("=", $string);
+      $search_query[$query_split[0]] = urldecode($query_split[1]);
+    } // foreach
+    } //if
+
+    $q = new WP_Query($search_query);
+    echo '<div class="search-r-count-and-back-wrap">'. $q->found_posts;
+    if( trim(strtolower(pll_current_language())) == "pt" ) {
+        echo ' resultados encontrados para ';
+    }else{
+        echo ' results found for ';
+    }
+    the_search_query();
+    echo '. <a href="' . home_url('/marketplace') . '" >';
+    if( trim(strtolower(pll_current_language())) == "pt" ) {
+      echo 'Voltar para a Marketplace';
+    }else{
+      echo 'Return to the Marketplace';
+    }
+    echo '</a></div>';
+    ?>
   </div>
 </section>
 
@@ -49,13 +77,6 @@ foreach($query_args as $key => $string) {
 } //if
 
 $q = new WP_Query($search_query);
-
-  /*    = new WP_Query( array( 'category_name' => 'Aplicativos',
-                                'meta_key' => 'pre-lancamento',
-                                'orderby' => array( 'meta_value_num' => 'ASC',
-                                                    'title' => 'ASC' )
-                              )
-                        );*/
     ?>
     <?php $anim_delay = 0; ?>
     <ul class="row-fluid">

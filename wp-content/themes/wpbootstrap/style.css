@@ -1334,6 +1334,13 @@ ul.pagination .prev span{
 .marketplace-search .btn-back:hover{
 	color: #f0f0f0;
 }
+.search-r-count-and-back-wrap{
+  color: #ffffff;
+  margin: 10px 0 -10px 0;
+}
+.search-r-count-and-back-wrap a{
+  color: #eb9316;
+}
 
 .marketplace-item .description,
 .marketplace-item .details{
