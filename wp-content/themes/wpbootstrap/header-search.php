@@ -85,8 +85,14 @@
       </div>
 
       <div class="title pull-right">
-      <?php if ( have_posts() ) : ?>
-        <h3>Resultados para: <?php the_search_query(); ?></h3>
+        <h3>
+        <?php if( trim(strtolower(pll_current_language())) == "pt" ) {?>
+          Resultados para:
+          <?php } else {?>
+          Results for:
+          <?php }
+           if ( have_posts() ) : ?>
+        <?php the_search_query(); ?></h3>
       <?php  endif;?>
       </div>
 
