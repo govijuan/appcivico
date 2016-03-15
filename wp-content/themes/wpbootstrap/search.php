@@ -20,7 +20,7 @@ add_action('wp_enqueue_scripts', 'wpEnqueueScripts');
 include (TEMPLATEPATH . '/translations.inc.php');
 ?>
 
-<?php get_header("internal"); ?>
+<?php get_header("search"); ?>
 
     <link href="http://appcivico.com/wp-content/themes/wpbootstrap/animate.css" rel="stylesheet">
 <!-- marketplace -->

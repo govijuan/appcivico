@@ -328,7 +328,8 @@ section.marketplace{
 .page-marketplace-2 section.marketplace,
 .page-marketplace-3 section.marketplace,
 .page-marketplace-4 section.marketplace,
-.page-marketplace-5 section.marketplace{
+.page-marketplace-5 section.marketplace,
+.search-results section.marketplace{
 	background: none;
 }
 
@@ -950,7 +951,8 @@ section.acqua *{
 .page-marketplace-2,
 .page-marketplace-3,
 .page-marketplace-4,
-.page-marketplace-5{
+.page-marketplace-5,
+.search-results{
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 100% auto;
